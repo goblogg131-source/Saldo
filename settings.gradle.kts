@@ -13,7 +13,7 @@ dependencyResolutionManagement {
         // via curl because the sandbox egress proxy blocks Gradle's Java TLS to
         // dl.google.com (PKIX). Central block, not project repos, so the
         // FAIL_ON_PROJECT_REPOS guard stays satisfied.
-    
+    }
 }
 rootProject.name = "MoneyTracker"
 include(":app")
