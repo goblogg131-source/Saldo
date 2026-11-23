@@ -23,16 +23,6 @@ android {
     //   signing.storeFile, signing.storePassword,
     //   signing.keyAlias, signing.keyPassword
     // See "Build & signing" in README.md.
-    signingConfigs {
-        getByName("debug") {
-            storeFile = rootProject.file(
-                findProperty("signing.storeFile") as String? ?: "release.keystore"
-            )
-            storePassword = findProperty("signing.storePassword") as String?
-            keyAlias = findProperty("signing.keyAlias") as String? ?: "saldo"
-            keyPassword = findProperty("signing.keyPassword") as String?
-        }
-    }
 
     buildTypes {
         release {
